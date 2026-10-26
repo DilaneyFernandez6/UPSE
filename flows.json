@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "id": "a900ae7c55cdfb44",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d06474c9a213154",
+        "type": "change",
+        "z": "a900ae7c55cdfb44",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.text",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 160,
+        "wires": [
+            [
+                "904553b59deda359"
+            ]
+        ]
+    },
+    {
+        "id": "c9e9162bfe019925",
+        "type": "inject",
+        "z": "a900ae7c55cdfb44",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"text\": \"Hola UPSE\"}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "4d06474c9a213154"
+            ]
+        ]
+    },
+    {
+        "id": "904553b59deda359",
+        "type": "debug",
+        "z": "a900ae7c55cdfb44",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 160,
+        "wires": []
+    }
+]
