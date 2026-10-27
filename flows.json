@@ -55,7 +55,7 @@
         "topic": "",
         "payload": "{\"text\": \"Hola UPSE\"}",
         "payloadType": "json",
-        "x": 210,
+        "x": 190,
         "y": 160,
         "wires": [
             [
